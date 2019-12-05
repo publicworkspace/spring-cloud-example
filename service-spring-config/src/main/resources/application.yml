@@ -1,0 +1,30 @@
+server:
+  port: 7001
+
+#读取本地配置文件设置,默认是读取git仓库配置文件
+
+spring:
+  application:
+    name: service-spring-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/publicworkspace/spring-cloud-example.git
+#          search-paths: mirco-service-config
+#          username: yb2020
+#          password: 357753Qq
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.133:9000/eureka/

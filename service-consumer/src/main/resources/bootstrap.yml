@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      name: consumer
+      uri: http://localhost:7001
+      profile: test
+      label: master
+
+feign:
+  hystrix:
+    enabled: true
