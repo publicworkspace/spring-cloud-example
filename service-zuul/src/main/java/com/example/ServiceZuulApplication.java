@@ -17,8 +17,8 @@ public class ServiceZuulApplication {
 		SpringApplication.run(ServiceZuulApplication.class, args);
 	}
 
-	@Bean
-	public ZuulFilter putFilter(){
-		return new ValidateTokenFilter();
-	}
+//	@Bean
+//	public ZuulFilter putFilter(){
+//		return new ValidateTokenFilter();
+//	}
 }

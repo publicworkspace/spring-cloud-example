@@ -15,8 +15,11 @@ spring:
 zuul:
   routes:
     service-provider:
-      path: /service-provider/**
+      path: /api/**
       serviceId: service-provider
+    baidu:
+      url: http://www.baidu.com
+      path: /b/**
 
 eureka:
   client:
