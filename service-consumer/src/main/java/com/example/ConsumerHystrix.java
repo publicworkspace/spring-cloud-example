@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.service.TestInterface;
+import com.example.service.ConsumerService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 
 @Component
-public class ConsumerHystrix implements TestInterface{
+public class ConsumerHystrix implements ConsumerService {
     @Override
     public String hello(@RequestParam("name") String name) {
         return "server is closed , your send failed";

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 
 @FeignClient(name = "service-provider" ,fallback = ConsumerHystrix.class)
-public interface TestInterface {
+public interface ConsumerService {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello(@RequestParam("name") String name);

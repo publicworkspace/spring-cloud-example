@@ -12,6 +12,12 @@ spring:
 #      url: http://www.baidu.com
 #      path: /api/**
 
+zuul:
+  routes:
+    service-provider:
+      path: /service-provider/**
+      serviceId: service-provider
+
 eureka:
   client:
     service-url:
